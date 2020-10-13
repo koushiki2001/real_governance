@@ -1,0 +1,104 @@
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-size:15px
+}
+p{
+    color: white
+}
+nav{
+   border: 1px solid black;
+}
+pre{
+  font-size: 20px;
+}
+
+
+ {
+          width: 100%;
+          background: url('luke-chesser-IGtutkXikuc-unsplash.jpg') 50% 0 no-repeat fixed;
+          background-size: cover;
+}
+nav{
+ background-color: white
+}
+li{
+    color: white
+}
+p{
+    font-family:Arial,Verdana,Tahoma
+}
+li
+{
+  font-size:16px
+}
+/* Style the header */
+header {
+  background-color: #ff3333;
+
+  border: 1px white;
+  padding: 0px;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: top;
+  width: 102px;
+  padding: 20px;
+  background:#ffffe6;
+  height: 100%;
+  position: fixed;
+  top:75px;
+}
+
+.sidenav {
+
+  width: 160px;
+
+  z-index: 1;
+  top: 5;
+  left: 0;
+   background: #ccc;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 0px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  font : 15px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+</style>

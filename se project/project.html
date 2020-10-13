@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Triggers & Cursors</title>
+  <link rel="stylesheet" href="layout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      window.onscroll = function() {
+        myFunction()
+      };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+
+      $(".divAction").click(function() {
+        var section = $(this).attr("section");
+        $(".menu div").css('color', 'black');
+        $(this).css('color', ' #8533ff');
+        $('.divContent').hide();
+        $('#' + section).show();
+
+      });
+    });
+  </script>
+</head>
+<style>
+  header {
+    height: 70px;
+    background: linear-gradient(to bottom, red 0%, yellow 100%)
+  }
+</style>
+<header id='myHeader' style="position: fixed;top: 0;width:100%">
+  <h1 class="centre"> REAL GOVERNANCE </h1>
+</header>
+
+   <body>
+     <p>hii</p>
+     <img src="lion.jpg" alt="lion " width="90%" height="750">
+     <table style="width:100%">
+      <tr>
+      <th><img src="Farming-in-India.jpg" alt="Girl in a jacket" width="400" height="300" onmouseover="width=450;" onmouseout="this.width=400"><br>Farming</th>
+      <th><img src="electricity.jpg" alt="electricity" width="400" height="300" onmouseover="width=450;" onmouseout="this.width=400"><br>Electricity</th>
+      <th><img src="pension.jpg" alt="pension" width="400" height="300" onmouseover="width=450;" onmouseout="this.width=400"><br>Pension</th>
+      </tr>
+      <tr>
+      <th><img src="education.jpg" alt="education" width="400" height="300" onmouseover="width=450;" onmouseout="this.width=400"><br>Education</th>
+      <th><img src="corruption.jpg" alt="corruption" width="400" height="300" onmouseover="width=450;" onmouseout="this.width=400"><br>corruption</th>
+      <th><img src="water-shortage.jpg" alt="water-shortage" width="400" height="300" onmouseover="width=450;" onmouseout="this.width=400"><br>water-shortage</th>
+      </tr>
+       <tr>
+      <th><img src="pollution.jpg" alt="pollution" width="400" height="300" onmouseover="width=450;" onmouseout="this.width=400"><br>Pollution</th>
+      <th><img src="roads.jpg" alt="roads" width="400" height="300" onmouseover="width=450;" onmouseout="this.width=400"><br>Roads</th>
+        </tr>
+     </table>
+  </body>
+
+</html>
