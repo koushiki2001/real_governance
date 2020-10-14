@@ -1,0 +1,56 @@
+body{
+    
+    background-image: url('backgroundC.png');
+}
+
+.topHead{
+    
+    background-image: linear-gradient(to right,darkslateblue,lightblue);
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 10rem;
+    padding: 0.1rem;
+    margin: 2rem;
+    box-shadow: 5px 3px 2px darkgray;
+    
+    
+}
+
+.topHead h1{
+    font-weight: bold;
+    font-family: cursive;
+}
+
+form
+{
+    padding: 3rem;
+    margin: auto;
+    border-style: outset;
+    width: 50%;
+    box-shadow: 3px 3px 2px lightgray;
+    background-image: linear-gradient(to right,lightblue,pink);
+    border-radius: 1rem;
+}
+
+input[type="text"]{
+    width: 400px;
+}
+
+input[type="text"]:placeholder-shown{
+    font-family: cursive;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+span{
+    color: red;
+}
+
+label{
+    
+    font-family: cursive;
+    font-weight: 100;
+}
